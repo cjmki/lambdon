@@ -9,8 +9,8 @@ Creating an AWS Lambda startup kit with a CLI tool is a valuable initiative to s
 ## Project Structure
 
 **Project Structure:**
-- **CLI Tool Directory:** This directory, named `lambda-cli`, will host the code for your CLI tool. It will be responsible for managing user interactions, initializing new projects, generating code, and more.
-- **Lambda Template Directory:** In this directory, Lambda function templates will be provided. These templates can be organized by runtime (e.g., Node.js, Python, Go) and will contain the basic structure for Lambda functions in each respective runtime.
+- **CLI Tool Directory:** This directory, named `lambdon-cli`, will host the code for your CLI tool. It will be responsible for managing user interactions, initializing new projects, generating code, and more.
+- **Lambda Template Directory:** In this directory, Lambda function templates will be provided. These templates can be organized by runtime (e.g., Node.js, Python, Go, Rust ...) and will contain the basic structure for Lambda functions in each respective runtime.
 - **Documentation Directory:** This directory will include comprehensive documentation and examples on how to use your CLI tool, set up Lambda functions, and best practices.
 
 ## Building the CLI Tool
