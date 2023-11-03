@@ -1,5 +1,4 @@
-markup
-Copy code
+
 # AWS Lambda Startup Kit with CLI Tool
 
 ## Project Overview
