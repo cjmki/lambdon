@@ -1,38 +1,17 @@
+# Lamdon: Simplifying Lambda Function Initialization with Terraform
 
-# AWS Lambda Startup Kit with CLI Tool
+Lamdon is a command-line interface (CLI) tool designed to streamline the initialization process for Lambda functions, supporting runtimes such as Node.js and Go. With Lamdon, developers can swiftly set up the necessary folder structure for their chosen runtime, complete with pre-baked Infrastructure as Code (IaC) in Terraform. This eliminates the tedious manual setup process, empowering developers to focus on writing code rather than configuring environments.
 
-## Project Overview
+# Features:
 
-Creating an AWS Lambda startup kit with a CLI tool is a valuable initiative to streamline the development of Lambda functions. This kit will offer developers a structured approach to initialize, manage, and deploy Lambda functions across different runtimes and Infrastructure as Code (IaC) frameworks.
+ - Effortless Initialization: Lamdon guides users through a simple prompt to select their desired runtime environment, automating the creation of the necessary project structure.
+- Pre-configured IaC: Each runtime initialization includes pre-baked Terraform IaC, enabling seamless deployment and management of Lambda functions in the cloud.
+- Streamlined Workflow: Leveraging Makefiles, Lamdon provides convenient commands for building, testing, and deploying Lambda functions, optimizing the development workflow.
 
-## Project Structure
+Stay tuned as we continue to enhance Lamdon with additional features, such as a power tuner for optimizing Lambda function performance. Get started with Lamdon today and experience the ease of Lambda function initialization!
 
-**Project Structure:**
-- **CLI Tool Directory:** This directory, named `lambdon-cli`, will host the code for your CLI tool. It will be responsible for managing user interactions, initializing new projects, generating code, and more.
-- **Lambda Template Directory:** In this directory, Lambda function templates will be provided. These templates can be organized by runtime (e.g., Node.js, Python, Go, Rust ...) and will contain the basic structure for Lambda functions in each respective runtime.
-- **Documentation Directory:** This directory will include comprehensive documentation and examples on how to use your CLI tool, set up Lambda functions, and best practices.
+# Tech Stack:
 
-## Building the CLI Tool
+- Clap simplifies the parsing and validation of command-line arguments and options, ensuring a smooth and error-free user experience.
 
-**Building the CLI Tool:**
-1. **Initialize a Go Module:** Inside the `lambda-cli` directory, we will create a Go module to manage dependencies. This can be done with the following command:
-
-   ```markup
-   go mod init lambda-cli
-Create a Command Line Interface: We will use the Cobra library to define and manage CLI commands and flags. Commands will be defined for tasks such as initializing a new Lambda function, building, testing, deploying, and more.
-
-Handle User Inputs: Viper will be used to handle user inputs. This allows for the definition and management of configuration variables, flags, and environment variables.
-
-Project Initialization: When a user wishes to initialize a new Lambda project, the CLI tool will copy the relevant Lambda template from the Lambda Template Directory to their specified project directory.
-
-Code Generation: Code will be generated based on user preferences. For example, if a user selects a specific runtime and IaC framework, the CLI tool will generate Lambda function code and relevant configuration files.
-
-Documentation: We will provide clear and helpful documentation on how to use the CLI tool. Cobra can be used to generate documentation based on the CLI structure.
-
-Testing: Thorough testing will be conducted to ensure that the CLI tool can handle various user inputs and scenarios.
-
-Cross-Platform Compatibility: The CLI tool will be designed to work on different platforms, including Windows, macOS, and Linux.
-
-Version Management: Consider implementing version management for the CLI tool, allowing users to specify which version they want to use.
-
-Distribution: Once the CLI tool is ready, it will be distributed to users. This can be done by publishing it on package managers like Homebrew, creating releases on GitHub, or hosting it on a dedicated project website.
+- Ratatui enhances the CLI interface by enabling the creation of interactive components such as prompts and progress indicators, improving user engagement and usability.
