@@ -1,10 +1,10 @@
 # Lamdon: Simplifying Lambda Function Initialization with Terraform
 
-Lamdon is a command-line interface (CLI) tool designed to streamline the initialization process for Lambda functions, supporting runtimes such as Node.js and Go. With Lamdon, developers can swiftly set up the necessary folder structure for their chosen runtime, complete with pre-baked Infrastructure as Code (IaC) in Terraform. This eliminates the tedious manual setup process, empowering developers to focus on writing code rather than configuring environments.
+Lamdon is a command-line interface (CLI) tool designed to streamline the initialization process for Lambda functions. With Lamdon, developers can swiftly set up the necessary folder structure for their chosen runtime including build and deploy steps. Also, with pre-baked Infrastructure as Code (IaC) in Terraform. This eliminates the tedious manual setup process, empowering developers to focus on writing code rather than configuring environments.
 
 # Grand Vision
 
-Single tool to deploy SAAS functions in a cloud agnostic way with minimal configuration. 
+Single tool to deploy serverless functions in a cloud agnostic way with minimal configuration. 
 
 # Features:
 
